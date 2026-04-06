@@ -1,0 +1,8 @@
+<Solution>
+  <Project Path="APILayer/APILayer.csproj" />
+  <Project Path="DbLayer/DbLayer.csproj" />
+  <Project Path="UI-Layer/ui-layer.esproj">
+    <Build />
+    <Deploy />
+  </Project>
+</Solution>
