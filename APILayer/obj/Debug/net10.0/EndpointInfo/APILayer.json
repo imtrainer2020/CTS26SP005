@@ -5,6 +5,259 @@
     "version": "1.0"
   },
   "paths": {
+    "/api/UserDetail/{id}": {
+      "get": {
+        "tags": [
+          "UserDetail"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/UserDetail"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/UserDetail"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/UserDetail"
+                }
+              }
+            }
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "UserDetail"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/UserDetail/User/{userId}": {
+      "get": {
+        "tags": [
+          "UserDetail"
+        ],
+        "parameters": [
+          {
+            "name": "userId",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/UserDetail"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/UserDetail"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/UserDetail"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/UserDetail": {
+      "post": {
+        "tags": [
+          "UserDetail"
+        ],
+        "requestBody": {
+          "content": {
+            "multipart/form-data": {
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "UDId": {
+                    "type": "integer",
+                    "format": "int32"
+                  },
+                  "UserId": {
+                    "type": "integer",
+                    "format": "int32"
+                  },
+                  "Address": {
+                    "type": "string"
+                  },
+                  "City": {
+                    "type": "string"
+                  },
+                  "Photo": {
+                    "type": "string",
+                    "format": "byte"
+                  },
+                  "PostCode": {
+                    "type": "string"
+                  },
+                  "Phone": {
+                    "type": "string"
+                  },
+                  "photoFile": {
+                    "type": "string",
+                    "format": "binary"
+                  }
+                }
+              },
+              "encoding": {
+                "UDId": {
+                  "style": "form"
+                },
+                "UserId": {
+                  "style": "form"
+                },
+                "Address": {
+                  "style": "form"
+                },
+                "City": {
+                  "style": "form"
+                },
+                "Photo": {
+                  "style": "form"
+                },
+                "PostCode": {
+                  "style": "form"
+                },
+                "Phone": {
+                  "style": "form"
+                },
+                "photoFile": {
+                  "style": "form"
+                }
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "UserDetail"
+        ],
+        "requestBody": {
+          "content": {
+            "multipart/form-data": {
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "photoFile": {
+                    "type": "string",
+                    "format": "binary"
+                  },
+                  "UDId": {
+                    "type": "integer",
+                    "format": "int32"
+                  },
+                  "UserId": {
+                    "type": "integer",
+                    "format": "int32"
+                  },
+                  "Address": {
+                    "type": "string"
+                  },
+                  "City": {
+                    "type": "string"
+                  },
+                  "Photo": {
+                    "type": "string",
+                    "format": "byte"
+                  },
+                  "PostCode": {
+                    "type": "string"
+                  },
+                  "Phone": {
+                    "type": "string"
+                  }
+                }
+              },
+              "encoding": {
+                "photoFile": {
+                  "style": "form"
+                },
+                "UDId": {
+                  "style": "form"
+                },
+                "UserId": {
+                  "style": "form"
+                },
+                "Address": {
+                  "style": "form"
+                },
+                "City": {
+                  "style": "form"
+                },
+                "Photo": {
+                  "style": "form"
+                },
+                "PostCode": {
+                  "style": "form"
+                },
+                "Phone": {
+                  "style": "form"
+                }
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
     "/api/UserRole": {
       "get": {
         "tags": [
@@ -457,6 +710,41 @@
   },
   "components": {
     "schemas": {
+      "UserDetail": {
+        "type": "object",
+        "properties": {
+          "udId": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "userId": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "address": {
+            "type": "string",
+            "nullable": true
+          },
+          "city": {
+            "type": "string",
+            "nullable": true
+          },
+          "photo": {
+            "type": "string",
+            "format": "byte",
+            "nullable": true
+          },
+          "postCode": {
+            "type": "string",
+            "nullable": true
+          },
+          "phone": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
       "UserRole": {
         "type": "object",
         "properties": {
@@ -500,6 +788,9 @@
     }
   },
   "tags": [
+    {
+      "name": "UserDetail"
+    },
     {
       "name": "UserRole"
     },

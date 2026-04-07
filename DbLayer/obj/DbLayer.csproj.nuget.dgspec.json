@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\2483869\\OneDrive - Cognizant\\Desktop\\Practice\\SP005\\Project\\Project\\DbLayer\\DbLayer.csproj": {}
+    "C:\\Users\\2483869\\OneDrive - Cognizant\\Desktop\\Practice\\SP005\\Project\\DbLayer\\DbLayer.csproj": {}
   },
   "projects": {
-    "C:\\Users\\2483869\\OneDrive - Cognizant\\Desktop\\Practice\\SP005\\Project\\Project\\DbLayer\\DbLayer.csproj": {
+    "C:\\Users\\2483869\\OneDrive - Cognizant\\Desktop\\Practice\\SP005\\Project\\DbLayer\\DbLayer.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\2483869\\OneDrive - Cognizant\\Desktop\\Practice\\SP005\\Project\\Project\\DbLayer\\DbLayer.csproj",
+        "projectUniqueName": "C:\\Users\\2483869\\OneDrive - Cognizant\\Desktop\\Practice\\SP005\\Project\\DbLayer\\DbLayer.csproj",
         "projectName": "DbLayer",
-        "projectPath": "C:\\Users\\2483869\\OneDrive - Cognizant\\Desktop\\Practice\\SP005\\Project\\Project\\DbLayer\\DbLayer.csproj",
+        "projectPath": "C:\\Users\\2483869\\OneDrive - Cognizant\\Desktop\\Practice\\SP005\\Project\\DbLayer\\DbLayer.csproj",
         "packagesPath": "C:\\Users\\2483869\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\2483869\\OneDrive - Cognizant\\Desktop\\Practice\\SP005\\Project\\Project\\DbLayer\\obj\\",
+        "outputPath": "C:\\Users\\2483869\\OneDrive - Cognizant\\Desktop\\Practice\\SP005\\Project\\DbLayer\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

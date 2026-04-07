@@ -43,6 +43,24 @@ namespace DbLayer.Common
         }
 
         [Obsolete]
+        public static int ExecuteNonQuery(string query, SqlParameter[] parameters)
+        {
+            // Use your existing connection logic here
+            using (SqlConnection connection = new SqlConnection(connectionString))
+            {
+                connection.Open();
+                using (SqlCommand command = new SqlCommand(query, connection))
+                {
+                    // This loop attaches the parameters to the command
+                    if (parameters != null)
+                        command.Parameters.AddRange(parameters);
+
+                    return command.ExecuteNonQuery();
+                }
+            }
+        }
+
+        [Obsolete]
         public static object ExecuteScalar(string query)
         {
             object result = null;

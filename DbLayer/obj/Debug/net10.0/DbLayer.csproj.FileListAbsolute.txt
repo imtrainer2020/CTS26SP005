@@ -10,3 +10,16 @@ C:\Users\2483869\OneDrive - Cognizant\Desktop\Practice\SP005\Project\Project\DbL
 C:\Users\2483869\OneDrive - Cognizant\Desktop\Practice\SP005\Project\Project\DbLayer\obj\Debug\net10.0\refint\DbLayer.dll
 C:\Users\2483869\OneDrive - Cognizant\Desktop\Practice\SP005\Project\Project\DbLayer\obj\Debug\net10.0\DbLayer.pdb
 C:\Users\2483869\OneDrive - Cognizant\Desktop\Practice\SP005\Project\Project\DbLayer\obj\Debug\net10.0\ref\DbLayer.dll
+C:\Users\2483869\OneDrive - Cognizant\Desktop\Practice\SP005\Project\DbLayer\bin\Debug\net10.0\DbLayer.deps.json
+C:\Users\2483869\OneDrive - Cognizant\Desktop\Practice\SP005\Project\DbLayer\bin\Debug\net10.0\DbLayer.dll
+C:\Users\2483869\OneDrive - Cognizant\Desktop\Practice\SP005\Project\DbLayer\bin\Debug\net10.0\DbLayer.pdb
+C:\Users\2483869\OneDrive - Cognizant\Desktop\Practice\SP005\Project\DbLayer\obj\Debug\net10.0\DbLayer.csproj.AssemblyReference.cache
+C:\Users\2483869\OneDrive - Cognizant\Desktop\Practice\SP005\Project\DbLayer\obj\Debug\net10.0\DbLayer.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\2483869\OneDrive - Cognizant\Desktop\Practice\SP005\Project\DbLayer\obj\Debug\net10.0\DbLayer.AssemblyInfoInputs.cache
+C:\Users\2483869\OneDrive - Cognizant\Desktop\Practice\SP005\Project\DbLayer\obj\Debug\net10.0\DbLayer.AssemblyInfo.cs
+C:\Users\2483869\OneDrive - Cognizant\Desktop\Practice\SP005\Project\DbLayer\obj\Debug\net10.0\DbLayer.csproj.CoreCompileInputs.cache
+C:\Users\2483869\OneDrive - Cognizant\Desktop\Practice\SP005\Project\DbLayer\obj\Debug\net10.0\DbLayer.sourcelink.json
+C:\Users\2483869\OneDrive - Cognizant\Desktop\Practice\SP005\Project\DbLayer\obj\Debug\net10.0\DbLayer.dll
+C:\Users\2483869\OneDrive - Cognizant\Desktop\Practice\SP005\Project\DbLayer\obj\Debug\net10.0\refint\DbLayer.dll
+C:\Users\2483869\OneDrive - Cognizant\Desktop\Practice\SP005\Project\DbLayer\obj\Debug\net10.0\DbLayer.pdb
+C:\Users\2483869\OneDrive - Cognizant\Desktop\Practice\SP005\Project\DbLayer\obj\Debug\net10.0\ref\DbLayer.dll

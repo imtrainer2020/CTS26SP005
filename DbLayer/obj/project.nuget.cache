@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "dsMt3qWYeCY=",
+  "dgSpecHash": "1+lcE+Zrrjk=",
   "success": true,
-  "projectFilePath": "C:\\Users\\2483869\\OneDrive - Cognizant\\Desktop\\Practice\\SP005\\Project\\Project\\DbLayer\\DbLayer.csproj",
+  "projectFilePath": "C:\\Users\\2483869\\OneDrive - Cognizant\\Desktop\\Practice\\SP005\\Project\\DbLayer\\DbLayer.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\2483869\\.nuget\\packages\\bouncycastle.cryptography\\2.6.2\\bouncycastle.cryptography.2.6.2.nupkg.sha512",
     "C:\\Users\\2483869\\.nuget\\packages\\google.protobuf\\3.32.0\\google.protobuf.3.32.0.nupkg.sha512",
@@ -31,9 +31,9 @@
       "code": "NU1510",
       "level": "Warning",
       "message": "PackageReference System.Data.Common will not be pruned. Consider removing this package from your dependencies, as it is likely unnecessary.",
-      "projectPath": "C:\\Users\\2483869\\OneDrive - Cognizant\\Desktop\\Practice\\SP005\\Project\\Project\\DbLayer\\DbLayer.csproj",
+      "projectPath": "C:\\Users\\2483869\\OneDrive - Cognizant\\Desktop\\Practice\\SP005\\Project\\DbLayer\\DbLayer.csproj",
       "warningLevel": 1,
-      "filePath": "C:\\Users\\2483869\\OneDrive - Cognizant\\Desktop\\Practice\\SP005\\Project\\Project\\DbLayer\\DbLayer.csproj",
+      "filePath": "C:\\Users\\2483869\\OneDrive - Cognizant\\Desktop\\Practice\\SP005\\Project\\DbLayer\\DbLayer.csproj",
       "libraryId": "System.Data.Common",
       "targetGraphs": [
         "net10.0"

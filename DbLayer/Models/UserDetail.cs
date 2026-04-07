@@ -14,11 +14,12 @@ namespace DbLayer.Models
 
         public string? City { get; set; }
 
+        public byte[]? Photo { get; set; }
+       
         public string? PostCode { get; set; }
 
         public string? Phone { get; set; }
 
-        public byte[]? Photo { get; set; }
 
         //public Users User { get; set; } = null!;
     }
