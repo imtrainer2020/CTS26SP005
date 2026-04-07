@@ -1,4 +1,5 @@
-﻿using DbLayer.Models;
+﻿using APILayer.Common;
+using DbLayer.Models;
 using DbLayer.Services;
 using Microsoft.AspNetCore.Mvc;
 
@@ -30,7 +31,8 @@ namespace APILayer.Controllers
         [HttpPost]
         public void Post([FromForm] UserDetail userDetail, IFormFile photoFile)
         {
-            userDetail.Photo = UploadFile(photoFile).ToArray();
+
+            userDetail.Photo = (photoFile != null && photoFile.Length > 0) ? CommonFuncs.UploadFile(photoFile).ToArray() : null;
             int res = service.AddUserDetail(userDetail);
         }
 
@@ -38,7 +40,7 @@ namespace APILayer.Controllers
         [HttpPut]
         public void Put(IFormFile photoFile, [FromForm] UserDetail userDetail)
         {
-            userDetail.Photo = UploadFile(photoFile).ToArray();
+            userDetail.Photo = (photoFile != null && photoFile.Length > 0) ? CommonFuncs.UploadFile(photoFile).ToArray() : null;
             int res = service.UpdateUserDetail(userDetail);
         }
 
@@ -49,12 +51,5 @@ namespace APILayer.Controllers
             int res = service.DeleteUserDetail(id);
         }
 
-
-        private MemoryStream UploadFile(IFormFile file)
-        {
-            using MemoryStream ms = new MemoryStream();
-            file.CopyTo(ms);
-            return ms;
-        }
     }
 }

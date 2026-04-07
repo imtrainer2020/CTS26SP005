@@ -102,6 +102,7 @@ namespace DbLayer.Common
             return command.ExecuteReader(CommandBehavior.CloseConnection);
         }
 
+        [Obsolete]
         public static List<T> ConvertDataTableToList<T>(DataTable dt) where T : new()
         {
             List<T> data = new List<T>();
