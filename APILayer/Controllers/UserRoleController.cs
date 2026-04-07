@@ -12,6 +12,7 @@ namespace APILayer.Controllers
     public class UserRoleController : ControllerBase
     {
         readonly UserRoleService roleService = new UserRoleService();
+
         // GET: api/<UserRoleController>
         [HttpGet]
         public IList<UserRole> Get()

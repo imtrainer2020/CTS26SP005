@@ -31,7 +31,6 @@ namespace APILayer.Controllers
         [HttpPost]
         public void Post([FromForm] UserDetail userDetail, IFormFile photoFile)
         {
-
             userDetail.Photo = (photoFile != null && photoFile.Length > 0) ? CommonFuncs.UploadFile(photoFile).ToArray() : null;
             int res = service.AddUserDetail(userDetail);
         }
@@ -40,7 +39,10 @@ namespace APILayer.Controllers
         [HttpPut]
         public void Put(IFormFile photoFile, [FromForm] UserDetail userDetail)
         {
-            userDetail.Photo = (photoFile != null && photoFile.Length > 0) ? CommonFuncs.UploadFile(photoFile).ToArray() : null;
+            userDetail.Photo = (photoFile != null && photoFile.Length > 0) ? 
+                CommonFuncs.UploadFile(photoFile).ToArray() 
+                : null;
+
             int res = service.UpdateUserDetail(userDetail);
         }
 
