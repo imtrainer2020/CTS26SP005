@@ -30,7 +30,7 @@ namespace DbLayer.Services
 
         public Users GetUserByEmail(string email)
         {
-            string query = $"SELECT * FROM Users WHERE Email = '{email}'";
+            string query = $"SELECT * FROM Users WHERE LOWER(Email) = '{email.ToLower()}'";
             var reader = DBOps.ExecuteReader(query);
             Users user = new Users();
             if (reader != null && reader.Read())
@@ -59,11 +59,14 @@ namespace DbLayer.Services
             return result;
         }
 
-        public bool ValidateUserLogin(string email, string password)
+        public Users ValidateUserLogin(string email, string password)
         {
-            string query = $"SELECT * FROM Users WHERE Email = '{email}' AND Password = '{password}'";
+            string query = $"SELECT * FROM Users WHERE LOWER(Email) = '{email.ToLower()}' AND Password = '{password}'";
             var reader = DBOps.ExecuteReader(query);
-            return reader != null && reader.Read();
+            Users user = new Users();
+            if (reader != null && reader.Read())
+                user = DBOps.ConvertReaderToObject<Users>(reader);
+            return user;
         }
 
         public string GetUserRole(string email)
@@ -83,10 +86,10 @@ namespace DbLayer.Services
 
         public bool IsEmailExists(string email)
         {
-            string query = $"SELECT COUNT(*) FROM Users WHERE Email = '{email}'";
+            string query = $"SELECT 1 FROM Users WHERE Email = '{email}'";
             var scalar = DBOps.ExecuteScalar(query);
             if (scalar != null)
-                return Convert.ToInt32(scalar) > 0;
+                return Convert.ToBoolean(scalar);
             return false;
         }
 

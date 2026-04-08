@@ -1,11 +1,11 @@
 import React, { useState } from 'react';
 import axios from 'axios';
-//import { useNavigate } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 
-const API_BASE_URL = "https://localhost:7123/api/Users";
+const API_BASE_URL = "https://localhost:7143/api/Users";
 
 export default function ForgetPassword() {
-    //const navigate = useNavigate(); // Helper to send user back to login page
+    const navigate = useNavigate(); // Helper to send user back to login page
 
     // State Management
     const [email, setEmail] = useState('');
@@ -37,7 +37,7 @@ export default function ForgetPassword() {
                 params: { email, newPassword }
             });
             alert("Password Reset Successful!");
-            //navigate('/'); //// Redirect back to Login page
+            navigate('/'); // Redirect back to Login page
         } catch (err) {
             setMessage({ text: "Failed to reset password.", type: "alert-danger" });
         }

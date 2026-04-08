@@ -30,9 +30,18 @@ namespace APILayer.Controllers
 
         // POST api/<UsersController>
         [HttpPost]
-        public void Post([FromBody] Users user)
+        public string Post([FromBody] Users user)
         {
-            int result = service.AddUser(user);
+            int rowsAffected = 0;
+            var isexist = service.IsEmailExists(user.Email);
+            if (isexist)
+                return "Exist";
+
+            rowsAffected = service.AddUser(user);
+            if (rowsAffected > 0)
+                return "Success";
+            else
+                return "Error";
         }
 
         // PUT api/<UsersController>/5
@@ -63,7 +72,7 @@ namespace APILayer.Controllers
         }
 
         [HttpGet("validate")]
-        public bool ValidateUserLogin(string email, string password)
+        public Users ValidateUserLogin(string email, string password)
         {
             return service.ValidateUserLogin(email, password);
 
