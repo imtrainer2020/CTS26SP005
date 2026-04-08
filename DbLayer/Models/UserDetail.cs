@@ -10,12 +10,14 @@ namespace DbLayer.Models
 
         public int UserId { get; set; }
 
+        public string? Fullname { get; set; }
+
         public string? Address { get; set; }
 
         public string? City { get; set; }
 
         public byte[]? Photo { get; set; }
-       
+
         public string? PostCode { get; set; }
 
         public string? Phone { get; set; }

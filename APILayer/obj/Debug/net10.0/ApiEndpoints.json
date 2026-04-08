@@ -18,6 +18,11 @@
         "IsRequired": false
       },
       {
+        "Name": "Fullname",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
         "Name": "Address",
         "Type": "System.String",
         "IsRequired": false
@@ -77,6 +82,11 @@
       {
         "Name": "UserId",
         "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "Fullname",
+        "Type": "System.String",
         "IsRequired": false
       },
       {

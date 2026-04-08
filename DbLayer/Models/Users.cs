@@ -19,8 +19,5 @@ namespace DbLayer.Models
 
         public DateTime ModifiedDate { get; set; } = DateTime.Now;
 
-        //public virtual UserRole Role { get; set; } = null!;
-
-        //public virtual ICollection<UserDetail> UserDetails { get; set; } = new List<UserDetail>();
     }
 }
